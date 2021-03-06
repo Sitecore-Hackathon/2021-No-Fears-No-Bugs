@@ -1,4 +1,8 @@
-﻿@inherits WebViewPage
+﻿@using Sitecore.ExperienceForms.Mvc.Html
+@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+
+@inherits WebViewPage
 @{
     Layout = null;
 }
@@ -26,5 +30,7 @@
         <script src="~/js/OURJS.js"></script>
     }
 
+    @Html.RenderFormStyles()
+    @Html.RenderFormScripts()
 </body>
 </html>
