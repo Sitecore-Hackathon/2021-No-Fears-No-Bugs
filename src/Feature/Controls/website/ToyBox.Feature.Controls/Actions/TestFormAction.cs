@@ -104,6 +104,33 @@ namespace ToyBox.Feature.Controls.Actions
                         formFieldValues.Add(new FormFieldValue { Name = field.Name, Value = fieldValue });
                     }
                 }
+
+                //Color picker type
+                if (field.TemplateId ==
+                    Sitecore.Configuration.Settings.GetSetting("ToyBox.Feature.Controls.SitecoreForms.ColorPickerTemplateId"))
+                {
+                    string fieldValue = GetValue(field);
+
+                    formFieldValues.Add(new FormFieldValue { Name = field.Name, Value = fieldValue });
+                }
+
+                //Location picker field type
+                if (field.TemplateId ==
+                    Sitecore.Configuration.Settings.GetSetting("ToyBox.Feature.Controls.SitecoreForms.LocationPickerTemplateId"))
+                {
+                    string fieldValue = GetValue(field);
+
+                    formFieldValues.Add(new FormFieldValue { Name = field.Name, Value = fieldValue });
+                }
+
+                //Image Picker field type
+                if (field.TemplateId ==
+                    Sitecore.Configuration.Settings.GetSetting("ToyBox.Feature.Controls.SitecoreForms.ImagePickerTemplateId"))
+                {
+                    string fieldValue = GetValue(field);
+
+                    formFieldValues.Add(new FormFieldValue { Name = field.Name, Value = fieldValue });
+                }
             }
 
             //Generate Email
