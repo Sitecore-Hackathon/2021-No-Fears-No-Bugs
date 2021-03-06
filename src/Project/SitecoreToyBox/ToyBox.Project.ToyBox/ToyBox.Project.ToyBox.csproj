@@ -89,12 +89,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="fee\dist\css\app.css" />
+    <Content Include="fee\dist\js\app.js" />
+    <Content Include="fee\src\js\app.js" />
+    <Content Include="fee\webpack.mix.js" />
+    <Content Include="Web.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fee\.gitignore" />
+    <Content Include="fee\dist\mix-manifest.json" />
+    <Content Include="fee\package-lock.json" />
+    <Content Include="fee\package.json" />
+    <Content Include="fee\src\sass\app.scss" />
+    <None Include="packages.config" />
     <Content Include="App_Config\Include\Project\Project.ToyBox.config" />
     <Content Include="Views\ToyBox\Web.config" />
     <Content Include="Views\ToyBox\Layouts\Default.cshtml" />
