@@ -373,14 +373,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Models\Fields\LocationPickerViewModel.cs" />
     <Compile Include="Models\Fields\ColorPickerViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Views\Controls\GeoControl.cshtml" />
+    <Content Include="Views\FormBuilder\FieldTemplates\LocationPicker.cshtml" />
     <Content Include="Views\Web.config" />
-    <Content Include="Views\Controls\ColorPicker.cshtml" />
+    <Content Include="Views\FormBuilder\FieldTemplates\ColorPicker.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
