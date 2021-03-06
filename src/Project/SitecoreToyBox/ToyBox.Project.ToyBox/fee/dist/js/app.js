@@ -21425,8 +21425,9 @@ google.maps.event.addListener(lp.map, 'idle', function (event) {
     // Get current location and show it in HTML
     var location = lp.getMarkerPosition();
     onIdlePositionView.innerHTML = location.lat + ',' + location.lng;
-    document.getElementById("locationLat").setAttribute('value', location.lat);
-    document.getElementById("locationLong").setAttribute('value', location.lng);
+    var locationValue = location.lat + ',' + location.lng;
+    var input = $('.location-picker-container').find('input')[0];
+    input.setAttribute('value', locationValue);
 });
 
 /***/ }),
