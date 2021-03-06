@@ -31,7 +31,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Docker", "_Docker", "{7A26
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sitecore ToyBox", "Sitecore ToyBox", "{76C0B767-EA6F-415D-9A4C-8EA30A749863}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyBox.Project.ToyBox", "src\Project\SitecoreToyBox\ToyBox.Project.ToyBox\ToyBox.Project.ToyBox.csproj", "{F5C4C5AA-2CFA-4EAE-982F-FC97B6AA813E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyBox.Project.ToyBox", "src\Project\SitecoreToyBox\ToyBox.Project.ToyBox\ToyBox.Project.ToyBox.csproj", "{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,17 +39,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F5C4C5AA-2CFA-4EAE-982F-FC97B6AA813E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F5C4C5AA-2CFA-4EAE-982F-FC97B6AA813E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F5C4C5AA-2CFA-4EAE-982F-FC97B6AA813E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F5C4C5AA-2CFA-4EAE-982F-FC97B6AA813E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{76C0B767-EA6F-415D-9A4C-8EA30A749863} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
-		{F5C4C5AA-2CFA-4EAE-982F-FC97B6AA813E} = {76C0B767-EA6F-415D-9A4C-8EA30A749863}
+		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD} = {76C0B767-EA6F-415D-9A4C-8EA30A749863}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
