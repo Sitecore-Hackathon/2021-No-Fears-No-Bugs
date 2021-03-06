@@ -37,6 +37,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{5F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyBox.Feature.Controls", "src\Feature\Controls\website\ToyBox.Feature.Controls\ToyBox.Feature.Controls.csproj", "{071E4165-00B7-45B6-A48C-64799E581A85}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicContent", "BasicContent", "{DB755C5C-E244-4471-AF71-59194C21FF96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyBox.Feature.BasicContent", "src\Feature\BasicContent\website\ToyBox.Feature.BasicContent\ToyBox.Feature.BasicContent.csproj", "{0C447EFE-A20C-4696-85CA-547283E07B99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{071E4165-00B7-45B6-A48C-64799E581A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{071E4165-00B7-45B6-A48C-64799E581A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{071E4165-00B7-45B6-A48C-64799E581A85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C447EFE-A20C-4696-85CA-547283E07B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C447EFE-A20C-4696-85CA-547283E07B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C447EFE-A20C-4696-85CA-547283E07B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C447EFE-A20C-4696-85CA-547283E07B99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +68,8 @@ Global
 		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD} = {76C0B767-EA6F-415D-9A4C-8EA30A749863}
 		{5FF3B2C4-EB0D-42AD-AF0C-2782668D8BA1} = {17DD5718-6E13-4F2C-9738-B410396D4552}
 		{071E4165-00B7-45B6-A48C-64799E581A85} = {5FF3B2C4-EB0D-42AD-AF0C-2782668D8BA1}
+		{DB755C5C-E244-4471-AF71-59194C21FF96} = {17DD5718-6E13-4F2C-9738-B410396D4552}
+		{0C447EFE-A20C-4696-85CA-547283E07B99} = {DB755C5C-E244-4471-AF71-59194C21FF96}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
