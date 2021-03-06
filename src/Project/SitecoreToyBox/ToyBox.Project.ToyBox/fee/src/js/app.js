@@ -9,5 +9,7 @@ window.Popper = require('popper.js').default;
 try {
     window.$ = window.jQuery = require('jquery');
     require('bootstrap');
-    require('@eastdesire/jscolor');
+    require('@eastdesire/jscolor'); 
+
+    require('./controls/locationPicker');
 } catch (e) {}

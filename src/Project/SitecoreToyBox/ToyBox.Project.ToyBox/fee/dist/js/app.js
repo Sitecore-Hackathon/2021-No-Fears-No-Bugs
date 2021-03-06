@@ -13298,7 +13298,7 @@ return jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(3);
-module.exports = __webpack_require__(7);
+module.exports = __webpack_require__(8);
 
 
 /***/ }),
@@ -13314,9 +13314,11 @@ window.Popper = __webpack_require__(0).default;
  */
 
 try {
-  window.$ = window.jQuery = __webpack_require__(1);
-  __webpack_require__(5);
-  __webpack_require__(6);
+    window.$ = window.jQuery = __webpack_require__(1);
+    __webpack_require__(5);
+    __webpack_require__(6);
+
+    __webpack_require__(7);
 } catch (e) {}
 
 /***/ }),
@@ -21406,7 +21408,32 @@ return jscolor;
 /* 7 */
 /***/ (function(module, exports) {
 
-throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n@import 'theme.scss'\r\n^\r\n      It's not clear which file to import for '@import \"C:/PROJECTS/nofearnobugs/2021-No-Fears-No-Bugs/src/Project/SitecoreToyBox/ToyBox.Project.ToyBox/fee/src/sass/theme.scss\"'.\nCandidates:\n  C:/PROJECTS/nofearnobugs/2021-No-Fears-No-Bugs/src/Project/SitecoreToyBox/ToyBox.Project.ToyBox/fee/src/sass/theme.scss\n  C:/PROJECTS/nofearnobugs/2021-No-Fears-No-Bugs/src/Project/SitecoreToyBox/ToyBox.Project.ToyBox/fee/src/sass/_theme.scss\nPlease delete or rename all but one of these files.\n\r\n      in C:\\PROJECTS\\nofearnobugs\\2021-No-Fears-No-Bugs\\src\\Project\\SitecoreToyBox\\ToyBox.Project.ToyBox\\fee\\src\\sass\\app.scss (line 2, column 1)\n    at runLoaders (C:\\PROJECTS\\nofearnobugs\\2021-No-Fears-No-Bugs\\src\\Project\\SitecoreToyBox\\ToyBox.Project.ToyBox\\fee\\node_modules\\webpack\\lib\\NormalModule.js:195:19)\n    at C:\\PROJECTS\\nofearnobugs\\2021-No-Fears-No-Bugs\\src\\Project\\SitecoreToyBox\\ToyBox.Project.ToyBox\\fee\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\PROJECTS\\nofearnobugs\\2021-No-Fears-No-Bugs\\src\\Project\\SitecoreToyBox\\ToyBox.Project.ToyBox\\fee\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\PROJECTS\\nofearnobugs\\2021-No-Fears-No-Bugs\\src\\Project\\SitecoreToyBox\\ToyBox.Project.ToyBox\\fee\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (C:\\PROJECTS\\nofearnobugs\\2021-No-Fears-No-Bugs\\src\\Project\\SitecoreToyBox\\ToyBox.Project.ToyBox\\fee\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.done [as callback] (C:\\PROJECTS\\nofearnobugs\\2021-No-Fears-No-Bugs\\src\\Project\\SitecoreToyBox\\ToyBox.Project.ToyBox\\fee\\node_modules\\neo-async\\async.js:8067:18)\n    at options.error (C:\\PROJECTS\\nofearnobugs\\2021-No-Fears-No-Bugs\\src\\Project\\SitecoreToyBox\\ToyBox.Project.ToyBox\\fee\\node_modules\\node-sass\\lib\\index.js:294:32)");
+// Get element references
+var confirmBtn = document.getElementById('confirmPosition');
+var onClickPositionView = document.getElementById('onClickPositionView');
+var onIdlePositionView = document.getElementById('onIdlePositionView');
+
+// Initialize locationPicker plugin
+var lp = new locationPicker('map', {
+    setCurrentPosition: true // You can omit this, defaults to true
+}, {
+    zoom: 15 // You can set any google map options here, zoom defaults to 15
+});
+
+// Listen to map idle event, listening to idle event more accurate than listening to ondrag event
+google.maps.event.addListener(lp.map, 'idle', function (event) {
+    // Get current location and show it in HTML
+    var location = lp.getMarkerPosition();
+    onIdlePositionView.innerHTML = location.lat + ',' + location.lng;
+    document.getElementById("locationLat").setAttribute('value', location.lat);
+    document.getElementById("locationLong").setAttribute('value', location.lng);
+});
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

@@ -92,6 +92,7 @@
     <Content Include="fee\dist\mix-manifest.json" />
     <Content Include="fee\package-lock.json" />
     <Content Include="fee\package.json" />
+    <Content Include="fee\src\js\controls\locationPicker.js" />
     <Content Include="fee\src\sass\app.scss" />
     <Content Include="App_Config\Include\Project\ToyBox\_SiteDefinition.local.config" />
     <Content Include="Web.config">
