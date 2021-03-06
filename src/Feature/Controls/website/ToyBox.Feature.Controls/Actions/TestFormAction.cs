@@ -104,21 +104,21 @@ namespace ToyBox.Feature.Controls.Actions
                         formFieldValues.Add(new FormFieldValue { Name = field.Name, Value = fieldValue });
                     }
                 }
-
-                //Generate Email
-
-                string subject = "New Purcharse";
-
-                StringBuilder strBuilder = new StringBuilder();
-                foreach (var formField in formFieldValues)
-                {
-                    strBuilder.Append($"{formField.Name}: {formField.Value}\n");
-                }
-
-                SendEmailHelper.SendEmail("toybox@nofearsnobugs.com",new []{ "example@sitecore.com" }, subject,strBuilder.ToString());
-
-
             }
+
+            //Generate Email
+
+            string subject = "New Purcharse";
+
+            StringBuilder strBuilder = new StringBuilder();
+            foreach (var formField in formFieldValues)
+            {
+                strBuilder.Append($"{formField.Name}: {formField.Value}\n");
+            }
+
+            SendEmailHelper.SendEmail("toybox@nofearsnobugs.com", new[] { "example@sitecore.com" }, subject, strBuilder.ToString());
+
+
 
             return true;
         }
