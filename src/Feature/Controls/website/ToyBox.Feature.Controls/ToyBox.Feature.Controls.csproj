@@ -371,6 +371,8 @@
   <ItemGroup>
     <Content Include="Views\FormBuilder\FieldTemplates\ImagePicker.cshtml" />
     <Content Include="App_Config\Include\Feature\ToyBoxFeature.Controls.SitecoreForms.config" />
+    <Content Include="Views\FormBuilder\Field.cshtml" />
+    <Content Include="Views\FormBuilder\FieldTemplates\SingleLineText.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
