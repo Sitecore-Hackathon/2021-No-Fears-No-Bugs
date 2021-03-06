@@ -1,4 +1,38 @@
 ﻿@model ToyBox.Feature.Controls.Models.Fields.ImagePickerViewModel
 
+<br />
+<br />
 
-Color: <input value="@Model.Value" name="@Model.Name" data-jscolor="{}">
+Image container:
+<input value="@Model.Value" name="@Html.NameFor(x => x.Value)" id="@Html.IdFor(x => x.Value)">
+
+<div class="row">
+    @foreach (var m in Model.ModelList)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                @*<img class="card-img-top" data-src="" alt="Card image cap">*@
+                @Html.Sitecore().Field("Image", m, new { @class = "model-img-top" })
+                <div class="card-body">
+                    <p class="card-text">@Html.Sitecore().Field("Title", m)</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<style>
+    .model-img-top {
+        width: 150px;
+        height: 80px;
+    }
+</style>
+
+<br />
+<br />
