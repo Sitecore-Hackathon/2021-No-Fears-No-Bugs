@@ -14,21 +14,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Toy Box</title>
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="~/fee/css/app.css">
+    <link rel="stylesheet" href="~/fee/dist/css/app.css">
 </head>
 
-<body>
-    @Html.Sitecore().Placeholder("header")
-    <main>
-        @Html.Sitecore().Placeholder("main")
-    </main>
-    @Html.Sitecore().Placeholder("footer")
+<body class="text-center">
 
-    @* Generally, disabling JavaScript interactivity in an MVC site when editing is a good idea. *@
-    @*@if (!Sitecore.Context.PageMode.IsExperienceEditor)
-            {
-        <script src="~/js/basic-company.js"></script>
-        }*@
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+
+        @Html.Sitecore().Placeholder("header")
+        <main role="main" class="inner cover">
+            <h1 class="cover-heading">Sitecore Forms ToyBox</h1>
+            @Html.Sitecore().Placeholder("main")
+        </main>
+        @Html.Sitecore().Placeholder("footer")
+
+    </div>
+
     <script src="~/fee/dist/js/app.js"></script>
     @Html.RenderFormStyles()
     @Html.RenderFormScripts()

@@ -13298,7 +13298,7 @@ return jQuery;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(3);
-module.exports = __webpack_require__(6);
+module.exports = __webpack_require__(7);
 
 
 /***/ }),
@@ -13316,7 +13316,7 @@ window.Popper = __webpack_require__(0).default;
 try {
   window.$ = window.jQuery = __webpack_require__(1);
   __webpack_require__(5);
-  __webpack_require__(11);
+  __webpack_require__(6);
 } catch (e) {}
 
 /***/ }),
@@ -17877,16 +17877,6 @@ module.exports = g;
 /* 6 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 7 */,
-/* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */
-/***/ (function(module, exports) {
-
 /**
  * jscolor - JavaScript Color Picker
  *
@@ -21411,6 +21401,12 @@ return jscolor;
 
 }); // END factory
 
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
