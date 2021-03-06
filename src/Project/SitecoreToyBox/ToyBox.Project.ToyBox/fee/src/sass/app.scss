@@ -1,2 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
-@import 'theme.scss'
+@import 'theme';
+@import 'footer';
+
+@import 'controls/locationPicker';
