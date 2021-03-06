@@ -88,6 +88,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="fee\.gitignore" />
+    <Content Include="fee\dist\mix-manifest.json" />
+    <Content Include="fee\package-lock.json" />
+    <Content Include="fee\package.json" />
+    <Content Include="fee\src\sass\app.scss" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -95,6 +100,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Content Include="fee\dist\css\app.css" />
+    <Content Include="fee\dist\js\app.js" />
+    <Content Include="fee\src\js\app.js" />
+    <Content Include="fee\webpack.mix.js" />
     <Content Include="Views\ToyBox\Layouts\Default.cshtml" />
     <Content Include="Views\Web.config" />
     <None Include="Web.Debug.config">
