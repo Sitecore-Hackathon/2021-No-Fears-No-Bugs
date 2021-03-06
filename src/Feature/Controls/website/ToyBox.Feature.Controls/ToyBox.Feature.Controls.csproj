@@ -369,10 +369,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Views\FormBuilder\FieldTemplates\ImagePicker.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
+    <Compile Include="Models\Fields\ImagePickerViewModel.cs" />
     <Compile Include="Models\Fields\LocationPickerViewModel.cs" />
     <Compile Include="Models\Fields\ColorPickerViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
