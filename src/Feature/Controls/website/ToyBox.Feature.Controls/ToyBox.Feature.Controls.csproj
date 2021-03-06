@@ -373,6 +373,7 @@
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\TestFormAction.cs" />
     <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
     <Compile Include="Models\Fields\ImagePickerViewModel.cs" />
     <Compile Include="Models\Fields\LocationPickerViewModel.cs" />
