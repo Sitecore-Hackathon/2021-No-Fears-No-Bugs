@@ -1,4 +1,12 @@
-﻿@model ToyBox.Feature.Controls.Models.Fields.ColorPickerViewModel
+﻿@using Sitecore.ExperienceForms.Mvc.Html
+@model ToyBox.Feature.Controls.Models.Fields.ColorPickerViewModel
 
-
-Color: <input value="@Model.Value" name="@Model.Name" data-jscolor="{}">
+<div class="form-group">
+    <label>Color</label>
+    <input id="@Html.IdFor(m => m.Value)"
+           value="@Model.Value"
+           name="@Html.NameFor(m => m.Value)"
+           class="form-control"
+           aria-label="@Model.Value"
+           data-jscolor="{}">
+</div>

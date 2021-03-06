@@ -1,0 +1,16 @@
+﻿@model ToyBox.Feature.Controls.Models.Fields.CustomSliderViewModel
+<script>
+    var values = [2, 30, 20, 30, 35, 45];
+    $('#slider1').change(function() {
+        $('span').text(values[this.value]);
+    });
+
+</script>
+
+
+    <input id="slider1" type="range" min="0" max="5" value="0" name="slider">
+    <span>2</span>
+
+
+
+Custom Slider: <input value="@Model.Value" name="@Html.NameFor(m => m.Value)" id="@Html.IdFor(m => m.Value)">
