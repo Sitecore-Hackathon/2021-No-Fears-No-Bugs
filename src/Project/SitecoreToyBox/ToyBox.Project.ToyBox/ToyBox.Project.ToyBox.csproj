@@ -93,6 +93,7 @@
     <Content Include="fee\package-lock.json" />
     <Content Include="fee\package.json" />
     <Content Include="fee\src\sass\app.scss" />
+    <Content Include="App_Config\Include\Project\ToyBox\_SiteDefinition.local.config" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -114,7 +115,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Config\" />
     <Folder Include="css\" />
     <Folder Include="js\" />
   </ItemGroup>
