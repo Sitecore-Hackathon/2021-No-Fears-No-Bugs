@@ -45,7 +45,15 @@ namespace ToyBox.Feature.Controls.Models.Fields
                     modelList.Add(imageModel);
                 }*/
 
-            this.ModelList = children.ToList();
+            if (children != null)
+            {
+                this.ModelList = children?.ToList();
+            }
+            else
+            {
+                this.ModelList = new List<Item>();
+            }
+           
         }
 
         protected override void UpdateItemFields(Item item)
