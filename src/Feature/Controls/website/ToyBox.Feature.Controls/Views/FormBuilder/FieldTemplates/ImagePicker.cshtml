@@ -11,14 +11,12 @@ Image container:
     {
         <div class="col-md-4">
             <div class="card mb-4 box-shadow">
-                @*<img class="card-img-top" data-src="" alt="Card image cap">*@
                 @Html.Sitecore().Field("Image", m, new { @class = "model-img-top" })
                 <div class="card-body">
                     <p class="card-text">@Html.Sitecore().Field("Title", m)</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
                             <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                         </div>
                     </div>
                 </div>
