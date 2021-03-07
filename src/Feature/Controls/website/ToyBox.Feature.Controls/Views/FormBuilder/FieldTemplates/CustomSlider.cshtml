@@ -1,0 +1,17 @@
+﻿@using Sitecore.ItemWebApi.Configuration
+@model ToyBox.Feature.Controls.Models.Fields.CustomSliderViewModel
+
+@{
+    string[] split = Model.Value.Split(',');
+    int maxRange = split.Length;
+}
+
+<label for="rangeSlider">Please select size:</label>
+<input type="range" min="1" max="@(maxRange)" value="@(split.First())" id="@Html.IdFor(m => m.Value)" step="1" list="rangeList">
+<datalist id="rangeList">
+    @foreach (var opt in split)
+    {
+        <option value ="@opt">@opt</option>
+    }
+
+</datalist>

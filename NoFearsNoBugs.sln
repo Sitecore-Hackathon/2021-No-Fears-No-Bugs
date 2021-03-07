@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{17DD5718-6E13-4F2C-9738-B410396D4552}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{15D97D61-D597-42EC-B7E9-E9EC8130E630}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Solution", "_Solution", "{ADCA10F7-A1D2-407B-8074-60418168C02E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		Directory.build.props = Directory.build.props
+		Directory.build.targets = Directory.build.targets
+		Docker.pubxml = Docker.pubxml
+		nuget.config = nuget.config
+		Packages.props = Packages.props
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Docker", "_Docker", "{7A261AC4-6FD2-4E54-9DBE-82D78601A150}"
+	ProjectSection(SolutionItems) = preProject
+		docker\.env = docker\.env
+		docker\docker-compose.override.yml = docker\docker-compose.override.yml
+		docker\docker-compose.yml = docker\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sitecore ToyBox", "Sitecore ToyBox", "{76C0B767-EA6F-415D-9A4C-8EA30A749863}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyBox.Project.ToyBox", "src\Project\SitecoreToyBox\ToyBox.Project.ToyBox\ToyBox.Project.ToyBox.csproj", "{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controls", "Controls", "{5FF3B2C4-EB0D-42AD-AF0C-2782668D8BA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyBox.Feature.Controls", "src\Feature\Controls\website\ToyBox.Feature.Controls\ToyBox.Feature.Controls.csproj", "{071E4165-00B7-45B6-A48C-64799E581A85}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasicContent", "BasicContent", "{DB755C5C-E244-4471-AF71-59194C21FF96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyBox.Feature.BasicContent", "src\Feature\BasicContent\website\ToyBox.Feature.BasicContent\ToyBox.Feature.BasicContent.csproj", "{0C447EFE-A20C-4696-85CA-547283E07B99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{561F804E-8397-497B-A0F1-7C793E21ED10}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToyBox.Foundation.Common", "src\Foundation\Common\website\ToyBox.Foundation.Common\ToyBox.Foundation.Common.csproj", "{ACA5BF3F-4DC4-42B6-BD39-D5CCFB05B3EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{071E4165-00B7-45B6-A48C-64799E581A85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{071E4165-00B7-45B6-A48C-64799E581A85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{071E4165-00B7-45B6-A48C-64799E581A85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{071E4165-00B7-45B6-A48C-64799E581A85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C447EFE-A20C-4696-85CA-547283E07B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C447EFE-A20C-4696-85CA-547283E07B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C447EFE-A20C-4696-85CA-547283E07B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C447EFE-A20C-4696-85CA-547283E07B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA5BF3F-4DC4-42B6-BD39-D5CCFB05B3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA5BF3F-4DC4-42B6-BD39-D5CCFB05B3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA5BF3F-4DC4-42B6-BD39-D5CCFB05B3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA5BF3F-4DC4-42B6-BD39-D5CCFB05B3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{76C0B767-EA6F-415D-9A4C-8EA30A749863} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
+		{494FBBDC-DA69-4FD8-8B30-FD8DD1FA6CCD} = {76C0B767-EA6F-415D-9A4C-8EA30A749863}
+		{5FF3B2C4-EB0D-42AD-AF0C-2782668D8BA1} = {17DD5718-6E13-4F2C-9738-B410396D4552}
+		{071E4165-00B7-45B6-A48C-64799E581A85} = {5FF3B2C4-EB0D-42AD-AF0C-2782668D8BA1}
+		{DB755C5C-E244-4471-AF71-59194C21FF96} = {17DD5718-6E13-4F2C-9738-B410396D4552}
+		{0C447EFE-A20C-4696-85CA-547283E07B99} = {DB755C5C-E244-4471-AF71-59194C21FF96}
+		{561F804E-8397-497B-A0F1-7C793E21ED10} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{ACA5BF3F-4DC4-42B6-BD39-D5CCFB05B3EE} = {561F804E-8397-497B-A0F1-7C793E21ED10}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

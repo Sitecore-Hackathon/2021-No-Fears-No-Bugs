@@ -1,0 +1,13 @@
+﻿@model ToyBox.Feature.Controls.Models.Fields.LocationPickerViewModel
+
+<div class="form-group location-picker-container">
+    <label>Please select your location</label>
+
+    <div id="map"></div>
+
+    <p>Selected Location: <span id="onIdlePositionView"></span></p>
+    <input id="@Html.IdFor(m => m.Value )" name="@Html.NameFor(m => m.Value)" type="text" style="display:none">
+
+</div>
+
+
